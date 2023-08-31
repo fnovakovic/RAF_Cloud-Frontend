@@ -4,7 +4,7 @@
 
 export const environment = {
   production: false,
-  postApi: 'https://jsonplaceholder.typicode.com'
+  postApi: 'http://localhost:8080' //https://jsonplaceholder.typicode.com
 };
 
 /*

@@ -1,16 +1,17 @@
 <header>
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <div class="container-fluid">
-      <a [routerLink]="'/'" class="navbar-brand">Demo 2</a>
+      <a [routerLink]="'/'" class="navbar-brand">Projekat</a>
       <div class="collapse navbar-collapse justify-content-between" id="navbarNavAltMarkup">
         <div class="navbar-nav">
-          <a [routerLink]="'/'" class="nav-link active" aria-current="page">Home</a>
-          <a [routerLink]="'/configuration'" class="nav-link active" aria-current="page">Configuration</a>
-          <a [routerLink]="'/posts'" class="nav-link active" aria-current="page">Posts</a>
+          <a [routerLink]="'/'" class="nav-link active" aria-current="page">Login</a>
+          <a *ngIf="isDisabledCreate"[routerLink]="'/create'" class="nav-link active" aria-current="page">Create User</a>
+          <a [routerLink]="'/history'" class="nav-link active" aria-current="page">Users</a>
+          <a [routerLink]="'/createMachine'" class="nav-link active" aria-current="page">Create Machine</a>
+          <a [routerLink]="'/machines'" class="nav-link active" aria-current="page">Machines</a>
+          <a [routerLink]="'/error'" class="nav-link active" aria-current="page">Error History</a>
         </div>
-        <div class="d-flex">
-          <span>{{ getUserName() }}</span>
-        </div>
+
       </div>
     </div>
   </nav>
