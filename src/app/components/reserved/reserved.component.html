@@ -1,0 +1,44 @@
+<div>
+  <h3>Set date and time</h3>
+
+  <h3>Start machine</h3>
+  <div>
+    <form (submit)="setStart()" class="mb-5">
+      <div class="form-group mb-2">
+        <label for="Start">Date and Time</label>
+        <input type="text" class="form-control" id="start" name="Date" placeholder="Enter date and time in format: day/month - hour/minutes" [(ngModel)]="dateAndTimeStart">
+      </div>
+
+      <button type="submit" class="btn btn-primary" >Submit</button>
+<!--      [disabled]="!isDisabledStart"-->
+    </form>
+  </div>
+
+
+  <h3>Stop machine</h3>
+  <div>
+    <form (submit)="setStop()" class="mb-5">
+      <div class="form-group mb-2">
+        <label for="Stop">Date and Time</label>
+        <input type="text" class="form-control" id="stop" name="Date" placeholder="Enter date and time in format: day/month - hour/minutes" [(ngModel)]="dateAndTimeStop">
+      </div>
+
+      <button type="submit" class="btn btn-primary" >Submit</button>
+<!--      [disabled]="!isDisabledStop"-->
+    </form>
+  </div>
+
+
+  <h3>Restart machine</h3>
+  <div>
+    <form (submit)="setRestart()" class="mb-5">
+      <div class="form-group mb-2">
+        <label for="Restart">Date and Time</label>
+        <input type="text" class="form-control" id="restart" name="Date" placeholder="Enter date and time in format: day/month - hour/minutes" [(ngModel)]="dateAndTimeRestart">
+      </div>
+
+      <button type="submit" class="btn btn-primary" >Submit</button>
+<!--      [disabled]="!isDisabledRestart"-->
+    </form>
+  </div>
+</div>

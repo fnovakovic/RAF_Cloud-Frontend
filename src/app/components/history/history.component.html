@@ -1,0 +1,44 @@
+<div>
+  <h1>Users list</h1>
+  <table>
+    <tr>
+        <td>First name</td>
+        <td>Last name</td>
+        <td>Email</td>
+        <td>Create permission</td>
+        <td>Delete permission</td>
+        <td>Read permission</td>
+        <td>Update permission</td>
+        <td>Create machine</td>
+        <td>Search machine</td>
+        <td>Start machine</td>
+        <td>Stop machine</td>
+        <td>Restart machine</td>
+        <td>Destroy machine</td>
+        <td>Delete</td>
+    </tr>
+
+    <tr *ngFor="let user of users" >
+      <td (click)="change(user.email,user.first_name,user.last_name,user.createUser,user.readUser,user.deleteUser,user.updateUser,user.password,user.createMachine,user.searchMachine,user.startMachine,user.stopMachine,user.restartMachine,user.destroyMachine)">{{user.first_name}}</td>
+      <td (click)="change(user.email,user.first_name,user.last_name,user.createUser,user.readUser,user.deleteUser,user.updateUser,user.password,user.createMachine,user.searchMachine,user.startMachine,user.stopMachine,user.restartMachine,user.destroyMachine)">{{user.last_name}}</td>
+      <td [ngStyle]="{'pointer-events': checkPermission(),'color': colorr()}"  (click)="change(user.email,user.first_name,user.last_name,user.createUser,user.readUser,user.deleteUser,user.updateUser,user.password,user.createMachine,user.searchMachine,user.startMachine,user.stopMachine,user.restartMachine,user.destroyMachine)" >{{user.email}}</td>
+      <td (click)="change(user.email,user.first_name,user.last_name,user.createUser,user.readUser,user.deleteUser,user.updateUser,user.password,user.createMachine,user.searchMachine,user.startMachine,user.stopMachine,user.restartMachine,user.destroyMachine)">{{user.createUser}}</td>
+      <td (click)="change(user.email,user.first_name,user.last_name,user.createUser,user.readUser,user.deleteUser,user.updateUser,user.password,user.createMachine,user.searchMachine,user.startMachine,user.stopMachine,user.restartMachine,user.destroyMachine)">{{user.deleteUser}}</td>
+      <td (click)="change(user.email,user.first_name,user.last_name,user.createUser,user.readUser,user.deleteUser,user.updateUser,user.password,user.createMachine,user.searchMachine,user.startMachine,user.stopMachine,user.restartMachine,user.destroyMachine)">{{user.readUser}}</td>
+      <td  (click)="change(user.email,user.first_name,user.last_name,user.createUser,user.readUser,user.deleteUser,user.updateUser,user.password,user.createMachine,user.searchMachine,user.startMachine,user.stopMachine,user.restartMachine,user.destroyMachine)" >{{user.updateUser}}</td>
+      <td  (click)="change(user.email,user.first_name,user.last_name,user.createUser,user.readUser,user.deleteUser,user.updateUser,user.password,user.createMachine,user.searchMachine,user.startMachine,user.stopMachine,user.restartMachine,user.destroyMachine)" >{{user.createMachine}}</td>
+      <td  (click)="change(user.email,user.first_name,user.last_name,user.createUser,user.readUser,user.deleteUser,user.updateUser,user.password,user.createMachine,user.searchMachine,user.startMachine,user.stopMachine,user.restartMachine,user.destroyMachine)" >{{user.searchMachine}}</td>
+      <td  (click)="change(user.email,user.first_name,user.last_name,user.createUser,user.readUser,user.deleteUser,user.updateUser,user.password,user.createMachine,user.searchMachine,user.startMachine,user.stopMachine,user.restartMachine,user.destroyMachine)" >{{user.startMachine}}</td>
+      <td  (click)="change(user.email,user.first_name,user.last_name,user.createUser,user.readUser,user.deleteUser,user.updateUser,user.password,user.createMachine,user.searchMachine,user.startMachine,user.stopMachine,user.restartMachine,user.destroyMachine)" >{{user.stopMachine}}</td>
+      <td  (click)="change(user.email,user.first_name,user.last_name,user.createUser,user.readUser,user.deleteUser,user.updateUser,user.password,user.createMachine,user.searchMachine,user.startMachine,user.stopMachine,user.restartMachine,user.destroyMachine)" >{{user.restartMachine}}</td>
+      <td  (click)="change(user.email,user.first_name,user.last_name,user.createUser,user.readUser,user.deleteUser,user.updateUser,user.password,user.createMachine,user.searchMachine,user.startMachine,user.stopMachine,user.restartMachine,user.destroyMachine)" >{{user.destroyMachine}}</td>
+
+      <td ><button class="delete-btn" [disabled]="!isDisabled" (click)="delete(user.email)">Delete</button></td>
+
+    </tr>
+  </table>
+
+
+  </div>
+
+

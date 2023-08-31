@@ -1,0 +1,26 @@
+<div>
+  <h1>Errors list</h1>
+
+  <table>
+    <tr>
+      <td>Machine ID</td>
+      <td>Operation</td>
+      <td>Date</td>
+      <td>Message</td>
+
+
+    </tr>
+
+    <tr *ngFor="let error of err" >
+      <td >{{error.machineId}}</td>
+      <td >{{error.operation}}</td>
+      <td >{{error.date}}</td>
+      <td >{{error.message}}</td>
+
+    </tr>
+  </table>
+
+
+</div>
+
+

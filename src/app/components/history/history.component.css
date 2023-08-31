@@ -1,0 +1,16 @@
+table {
+  border-spacing: 30px;
+  border-collapse: separate;
+  border-left:  solid;
+  border-top:  solid;
+  border-right:  solid;
+  border-bottom:  solid;
+}
+
+
+/*tr {*/
+/*  border-left:  solid;*/
+/*  border-top:  solid;*/
+/*  border-right:  solid;*/
+/*  border-bottom:  solid;*/
+/*}*/

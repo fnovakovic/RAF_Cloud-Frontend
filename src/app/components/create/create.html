@@ -1,0 +1,55 @@
+<div>
+  <h3>Create User</h3>
+
+  <div>
+    <form (submit)="setText()" class="mb-5">
+      <div class="form-group mb-2">
+        <label for="firstName">First name</label>
+        <input type="text" class="form-control" id="firstName" name="firstName" placeholder="First name" [(ngModel)]="firstName">
+
+        <label for="lastName">Last name</label>
+        <input type="text" class="form-control" id="lastName" name="lastName" placeholder="Last Name" [(ngModel)]="lastName">
+
+        <label for="email">Email</label>
+        <input type="text" class="form-control" id="email" name="email" placeholder="Email" [(ngModel)]="email">
+
+        <label for="password">Password</label>
+        <input type="text" class="form-control" id="password" name="password" placeholder="Password" [(ngModel)]="password">
+
+        <label for="createPermission">Create Permission</label>
+        <input type="text" class="form-control" id="createPermission" name="createPermission" placeholder="Create Permission" [(ngModel)]="createPermission">
+
+        <label for="readPermission">Read Permission</label>
+        <input type="text" class="form-control" id="readPermission" name="readPermission" placeholder="Read Permission" [(ngModel)]="readPermission">
+
+        <label for="deletePermission">Delete Permission</label>
+        <input type="text" class="form-control" id="deletePermission" name="deletePermission" placeholder="Delete Permission" [(ngModel)]="deletePermission">
+
+        <label for="updatePermission">Update Permission</label>
+        <input type="text" class="form-control" id="updatePermission" name="updatePermission" placeholder="Update Permission" [(ngModel)]="updatePermission">
+
+        <label for="createMachinePermission">Create Machine Permission</label>
+        <input type="text" class="form-control" id="createMachinePermission" name="createMachinePermission" placeholder="Create Machine Permission" [(ngModel)]="createMachine">
+
+        <label for="searchMachinePermission">Search Machine Permission</label>
+        <input type="text" class="form-control" id="searchMachinePermission" name="searchMachinePermission" placeholder="Search Machine Permission" [(ngModel)]="searchMachine">
+
+        <label for="startMachinePermission">Start Machine Permission</label>
+        <input type="text" class="form-control" id="startMachinePermission" name="startMachinePermission" placeholder="Start Machine Permission" [(ngModel)]="startMachine">
+
+        <label for="stopMachinePermission">Stop Machine Permission</label>
+        <input type="text" class="form-control" id="stopMachinePermission" name="stopMachinePermission" placeholder="Stop Machine Permission" [(ngModel)]="stopMachine">
+
+        <label for="restartMachinePermission">Restart Machine Permission</label>
+        <input type="text" class="form-control" id="restartMachinePermission" name="restartMachinePermission" placeholder="Restart Machine Permission" [(ngModel)]="restartMachine">
+
+        <label for="destroyMachinePermission">Destroy Machine Permission</label>
+        <input type="text" class="form-control" id="destroyMachinePermission" name="destroyMachinePermission" placeholder="Destroy Machine Permission" [(ngModel)]="destroyMachine">
+
+
+      </div>
+
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+  </div>
+</div>
