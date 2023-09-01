@@ -29,9 +29,12 @@ Zakazivanje operacije na mašini: Operacije START, STOP i RESTART se mogu zakaza
 
 Frontend Na frontendu, pored grafičkog interfejsa za upravljanjem korisnicima, potrebno je implementirati dve nove stranice:
 
-Stranicu za pretragu mašina
-Stranicu za kreiranje mašina
-Stranicu sa istorijom grešaka
-Pretraga mašina: Implementirati da se upotrebom SEARCH-a prikažu sve mašine bez prosleđenih parametara kada se stranica učita. Pored toga, implemenitari formu iznad tabele koja sadrži potrebna polja da pokrije sve funkcionalnosti za pretragu koje nudi Backend. Filteri će se primeniti submitom te forme.
-Kreiranje mašine Napraviti jednostavnu formu koja će sadržati ime koje je potrebno da bi se mašina kreirala na Backend strani. Ova forma neće sadržati id, status, niti korisnika, to će Backend zaključiti sam.
-Stranica sa istorijom grešaka Tabela u kojoj je potrebno prikazati greške koje su se dogodile pri izvršavanju zakazane operacije. Potrebno je prikazati samo greške koje su se dogodile nad mašinama ulogovanog korisnika. Korisnik bez specifične permisije nema pristup, ni mogućnost za izvršavanja odgovarajuće akcije na frontend-u. Ukoliko korisnik nema nijednu permisiju, nakon uspešnog login-a, obavestiti ga alertom.
+  1.Stranicu za pretragu mašina
+  2.Stranicu za kreiranje mašina
+  3.Stranicu sa istorijom grešaka
+  
+1.Pretraga mašina: Implementirati da se upotrebom SEARCH-a prikažu sve mašine bez prosleđenih parametara kada se stranica učita. Pored toga, implemenitari formu iznad tabele koja sadrži potrebna polja da pokrije sve funkcionalnosti za pretragu koje nudi Backend. Filteri će se primeniti submitom te forme.
+
+2.Kreiranje mašine Napraviti jednostavnu formu koja će sadržati ime koje je potrebno da bi se mašina kreirala na Backend strani. Ova forma neće sadržati id, status, niti korisnika, to će Backend zaključiti sam.
+
+3.Stranica sa istorijom grešaka Tabela u kojoj je potrebno prikazati greške koje su se dogodile pri izvršavanju zakazane operacije. Potrebno je prikazati samo greške koje su se dogodile nad mašinama ulogovanog korisnika. Korisnik bez specifične permisije nema pristup, ni mogućnost za izvršavanja odgovarajuće akcije na frontend-u. Ukoliko korisnik nema nijednu permisiju, nakon uspešnog login-a, obavestiti ga alertom.
